@@ -1,13 +1,6 @@
 const postcss = require('postcss');
-const postcssNestedPlugin = require('postcss-nested');
 
-const processors = [
-  {
-    plugin: postcssNestedPlugin,
-    namespace: 'nested',
-    defaults: {},
-  },
-];
+const processors = require('./processors');
 
 module.exports = postcss.plugin('travix', function (opts) {
   const options = opts || {};

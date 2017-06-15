@@ -19,14 +19,15 @@
     "url": "https://github.com/Travix-International/postcss-travix/issues"
   },
   "homepage": "https://github.com/Travix-International/postcss-travix#readme",
+  "dependencies": {
+    "autoprefixer": "^7.1.1",
+    "postcss-nested": "^2.0.2"
+  },
   "devDependencies": {
     "chai": "^4.0.2",
     "eslint": "^4.0.0",
     "eslint-config-travix": "^2.3.2",
     "mocha": "^3.4.2",
     "postcss": "^6.0.2"
-  },
-  "dependencies": {
-    "postcss-nested": "^2.0.2"
   }
 }
