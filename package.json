@@ -1,7 +1,7 @@
 {
   "name": "postcss-travix",
   "description": "PostCSS plugin for Travix",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "lint": "eslint *.js test/*.js",
     "test": "mocha"
