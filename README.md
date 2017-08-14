@@ -81,6 +81,32 @@ Output:
 }
 ```
 
+### Custom Properties (Variables)
+
+Input:
+
+```css
+:root {
+  --my-var: blue;
+}
+
+div {
+  border-color: var(--variable-defined-elsewhere);
+  background: var(--my-var);
+}
+```
+
+Output:
+
+```css
+div {
+  border-color: var(--variable-defined-elsewhere);
+  background: blue;
+}
+```
+
+For additional reference, visit the [plugin's documentation](https://github.com/postcss/postcss-custom-properties)
+
 ### Autoprefixing
 
 We support compatibility with older versions of browsers, and the current list of browsers consists of:

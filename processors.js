@@ -1,5 +1,6 @@
 const postcssNestedPlugin = require('postcss-nested');
 const postcssAutoprefixerPlugin = require('autoprefixer');
+const postcssCustomProperties = require('postcss-custom-properties');
 
 module.exports = [
   {
@@ -17,5 +18,10 @@ module.exports = [
         'Safari >= 5',
       ],
     },
+  },
+  {
+    plugin: postcssCustomProperties,
+    namespace: 'properties',
+    defaults: {},
   },
 ];
