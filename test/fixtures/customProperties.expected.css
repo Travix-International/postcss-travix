@@ -1,4 +1,4 @@
 div {
-  border-color: var(--variable-referenced-elsewhere);
+  border-color: var(--variable-defined-elsewhere);
   background: blue;
 }

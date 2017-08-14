@@ -21,7 +21,7 @@ module.exports = [
   },
   {
     plugin: postcssCustomProperties,
-    namespace: 'customProperties',
+    namespace: 'properties',
     defaults: {},
   },
 ];
