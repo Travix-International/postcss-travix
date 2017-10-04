@@ -9,3 +9,9 @@
     }
   }
 }
+
+.nested {
+  &.something {
+    padding: 0;
+  }
+}

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const css = require('css');
 
 const expect = require('chai').expect;
 
@@ -8,12 +9,7 @@ const plugin = require('../');
 const FIXTURES_DIR = path.join(__dirname, 'fixtures');
 
 function trimCSS(input) {
-  return input
-    .split('\n')
-    .map(function (line) {
-      return line.trimLeft()
-    })
-    .join('\n');
+  return css.stringify(css.parse(input));
 }
 
 describe('postcss-travix', function () {
